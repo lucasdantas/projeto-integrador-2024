@@ -1,0 +1,38 @@
+#{extends 'main.html' /}
+#{set title:'Formulário de Cadastro' /}
+
+<p class="lead mt-4">
+	Formulário do grupo 08
+</p>
+
+
+<p>
+	<small>Desenvolva aqui o seu formulário de cadastro.</small>
+</p>
+
+<form action="http://10.97.3.8:9000/salvar" style="display: flex; justify-content: center; align-items: center;">
+
+<div id="principal" style=" width: 50%;">
+	<input type="hidden" name="grupo" value=${grupo} />
+
+	<div class="form-row">
+		<div class="form-group col-md-12">
+		  <label for="input1">Nome</label>
+		  <input type="text" class="form-control" id="input1" name="nome" placeholder="Digite seu nome:">
+		</div>
+
+	  </div>
+
+	  <div class="form-group">
+		<label for="input3">Id do funcionario</label>
+		<input type="number" class="form-control" id="input3" name="numero" placeholder="Digite seu ID:">
+	  </div>
+
+
+
+
+
+
+
+
+</form>
