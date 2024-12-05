@@ -12,15 +12,26 @@
 
  <h1>Informações do produto</h1>
 <form action = "10.97.3.8:9000/salvar">
-	<input type="hidden" name="grupo" value=${grupo} />
+	<input type="hidden" name="grupo" value=${grupo} /><br>
 
 	<label for="name">Nome:</label>
-	<input type="text" name="nome" id="nome" />
+	<input type="text" name="nome" id="nome" /><br>
 
 	<label for="name">Descrição:</label>
-	<textarea name="descricao" id="descricao" holderplace></textarea>
+	<textarea name="descricao" id="descricao" holderplace></textarea><br>
 
-	<label for=""></label>
+	<label for="numero">Quantidade</label>
+	<input type="number" name="numero" id="numero"><br>
+
+	<label for="tipo">Tipo:</label>
+	<select name="tipo" id="tipo">
+		<option value="1">Limpeza</option>
+		<option value="2">Comida</option>
+		<option value="1">Bebiba</option>
+		<option value="1">Cosmeticos</option>
+	</select>
+
+
 
 	
 </form>
