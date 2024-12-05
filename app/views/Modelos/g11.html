@@ -2,14 +2,28 @@
 #{set title:'Formulário de Cadastro' /}
 
 <p class="lead mt-4">
-	Formulário do grupo ${grupo}
+	Formulário do grupo G11
 </p>
 
 
 <p>
-	<small>Desenvolva aqui o seu formulário de cadastro.</small>
+	<h1>Pedidos de açaí</h1>
 </p>
 
-<form>
+<form action="http://10.97.3.8:9000/salvar">
 	<input type="hidden" name="grupo" value=${grupo} />
+
+	<label for="nome">Nome do cliente</label><br>
+  <input type="text" id="nome" name="nome" value=""><br>
+
+  <label for="numero">Número de telefone</label><br>
+  <input type="number" id="numero" name="numero" value=""><br>
+
+  <h4>Tamanho do açaí</h4>
+  <input type="radio" id="tipo" name="tipo" value="300ml">
+  <label for="tipo">300ml</label><br>
+  <input type="radio" id="tipo" name="tipo" value="500ml">
+  <label for="tipo">500ml</label><br>
+  <input type="radio" id="tipo" name="tipo" value="700ml">
+  <label for="tipo">700ml</label><br>
 </form>
