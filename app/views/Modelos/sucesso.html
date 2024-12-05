@@ -20,6 +20,9 @@
 	#{if modelo?.numero}
 		<li><b>Número</b>: ${modelo.numero}</li>
 	#{/if}
+	#{if modelo?.tipo}
+		<li><b>Tipo</b>: ${modelo.tipo}</li>
+	#{/if}
 	#{if modelo?.opcoes}
 		<li><b>Opções:</b>
 			#{list items:modelo?.opcoes, as:'op'}
@@ -28,9 +31,9 @@
 		</li>
 	#{/if}
 	#{if modelo?.data}
-		<li><b>Data</b>: ${modelo.data.format('dd/MM/yyyy')}</li>
+		<li><b>Data</b>: ${modelo.data}</li>
 	#{/if}
 </ul>
 
-<a class="btn btn-primary" href="@{Modelos.form(grupo:modelo.grupo)}">Novo cadastro</a> 
+<a class="btn btn-primary" href="@{Modelos.form(grupo:modelo.grupo)}">Novo cadastro</a>
 <a class="btn btn-secondary" href="@{Modelos.listar(grupo:modelo.grupo)}">Ver todos cadastros do grupo</a>

@@ -20,6 +20,9 @@
 		#{if modelo?.numero}
 			<li><b>Número</b>: ${modelo.numero}</li>
 		#{/if}
+		#{if modelo?.tipo}
+			<li><b>Tipo</b>: ${modelo.tipo}</li>
+		#{/if}
 		#{if modelo?.opcoes}
 			<li><b>Opções:</b>
 				#{list items:modelo?.opcoes, as:'op'}
@@ -28,7 +31,7 @@
 			</li>
 		#{/if}
 		#{if modelo?.data}
-			<li><b>Data</b>: ${modelo.data.format('dd/MM/yyyy')}</li>
+			<li><b>Data</b>: ${modelo.data}</li>
 		#{/if}
 	</ul>
 	<hr />
