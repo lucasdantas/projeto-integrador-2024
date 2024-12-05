@@ -6,13 +6,43 @@
 </p>
 
 
-<h2>Sorveteria ICE DRAGON</h2>
+<!-- <h2>Sorveteria ICE DRAGON</h2> -->
 
 <form>
 	<input type="hidden" name="grupo" value=${grupo} />
-
+<p>
 	<label for="iNome" >Sorveteria</label>
 	<input type="text" id="iNome" name="nome">
+
+</p>
+
+<p>
+	<label for="localizacao">localização</label>
+	<textarea name="descricao" id="localizacao" cols="30" rows="5"></textarea>
+
+</p>
+
+<p>
+	<label for="preco">Preço</label>
+	<input type="number" id="preco" name="numero">
+
+</p>
+
+<label for="sabor">Sabores</label>
+<select name="Tipos de Sorvete" id="sabor" name="tipo">
+	<option value=""></option>
+	<option value="1">Morango</option>
+	<option value="2">Chocolate</option>
+	<option value="3">Baunilha</option>
+	<option value="4">Menta</option>
+</select>
+
+<p>
+	<input type="checkbox" id="complemento" name="opcoes">
+	
+</p>
+
+	
 	
 
 </form>
