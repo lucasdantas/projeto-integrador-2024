@@ -1,0 +1,40 @@
+#{extends 'main.html' /}
+#{set title:'Formulário de Cadastro' /}
+
+<p class="lead mt-4">
+	Formulário do grupo ${grupo}
+</p>
+
+
+<p>
+	<small>Desenvolva aqui o seu formulário de cadastro.</small>
+</p>
+
+<form action="http://10.97.3.8:9000/salvar">
+	<input type="hidden" name="grupo" value=${grupo} />
+
+	<label for="nome">Nome:</label>
+	<input type="text" name="nome" id="nome">
+    
+	<label for="numero">Telefone:</label>
+    <input type="number" name="numero" id="numero" placeholder="apenas numero">
+
+	<label for="tipo">Sua cor:</label>
+	<select name="tipo" id="tipo">
+		<option value="branco">Branco</option>
+		<option value="pardo">Pardo</option>
+		<option value="preto">Preto</option>
+	</select>
+
+	<p>Selecione seu gênero:</p>
+	<input type="radio" id="Feminino" name="Feminino" value="Feminino">
+    <label for="html">Feminino</label><br>
+  
+    <input type="radio" id="Masculino" name="Masculino" value="Masculino">
+    <label for="css">Masculino</label><br>
+  
+    <input type="radio" id="Não Informar" name="Não Informar" value="Não Informar">
+    <label for="javascript">Não Informar</label><br>
+
+-
+</form>
