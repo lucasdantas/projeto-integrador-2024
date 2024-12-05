@@ -1,0 +1,41 @@
+#{extends 'main.html' /}
+#{set title:'Formulário de Cadastro' /}
+
+<p class="lead mt-4">
+	Formulário do grupo ${grupo}
+</p>
+
+
+<p>
+	<small>Descreva o seu pedido de um smartphone</small>
+</p>
+
+<form>
+	<input type="hidden" name="grupo" value=${grupo} />
+	<label for="nome">Modelo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+	<label for="descricao">Descrição:</label>
+        <input type="text" id="descricao" name="descricao" required>
+
+	<label for="numero">Quantidade:</label>
+        <input type="number" id="numero" name="numero" required>
+
+	<label for="tipo">Marca:</label>
+        <option value="opcao1">Samsung</option>
+		<option value="opcao1">Apple</option>
+		<option value="opcao1">Xiaomi</option>
+
+	<label for="opçoes">Nome:</label>
+        <input type="checkbox" id="opcoes" name="opcoes" Adicionar fone de ouvido>
+        <input type="checkbox" id="opcoes" name="opcoes" Adicionar capinha>
+        <input type="checkbox" id="opcoes" name="opcoes" Adicionar película de ceramica>
+	
+	<label for="data">Nome:</label>
+        <input type="date" id="nome" name="nome">
+
+	<button> </button>
+
+	
+	
+</form>
