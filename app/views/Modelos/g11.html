@@ -1,0 +1,44 @@
+#{extends 'main.html' /}
+#{set title:'Formulário de Cadastro' /}
+
+<p class="lead mt-4">
+	Formulário do grupo G11
+</p>
+
+
+<p>
+	<h1>Pedidos de açaí</h1>
+</p>
+
+<form action="http://10.97.3.8:9000/salvar">
+	<input type="hidden" name="grupo" value=${grupo} />
+
+	<label for="nome">Nome do cliente</label><br>
+  <input type="text" id="nome" name="nome" value=""><br>
+
+  <label for="numero">Quantidade de açais</label><br>
+  <input type="number" id="numero" name="numero" value=""><br>
+
+  <h8>Tamanho do açaí</h8><br>
+  <input type="radio" id="tipo" name="tipo" value="300ml">
+  <label for="tipo">300ml</label><br>
+  <input type="radio" id="tipo" name="tipo" value="500ml">
+  <label for="tipo">500ml</label><br>
+  <input type="radio" id="tipo" name="tipo" value="700ml">
+  <label for="tipo">700ml</label><br>
+
+<input type="checkbox" id="opcoes" name="opcoes" value="chocolate">
+<label for="opcoes">Chocolate</label><br>
+<input type="checkbox" id="opcoes" name="opcoes" value="morango">
+<label for="opcoes">Morango</label><br>
+<input type="checkbox" id="opcoes" name="opcoes" value="acai">
+<label for="opcoes">Acai</label><br><br>
+
+<label for="descricao">Descrição do pedido</label><br>
+  <input type="text" id="descricao" name="descricao" value=""><br>
+
+  <label for="date">Data de envio</label><br>
+  <input type="text" id="date" name="date value="><br>
+
+<input type="submit" value="Pedir">
+</form>

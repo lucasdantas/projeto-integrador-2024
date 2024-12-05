@@ -1,0 +1,33 @@
+
+
+<p class="lead mt-4">
+	Formulário do grupo g09
+</p>
+
+
+<p>
+	<small>Desenvolva aqui o seu formulário de cadastro.</small>
+</p>
+
+<form action="http://10.97.3.8:9000/salvar">
+	<input type="hidden" name="grupo" value=${grupo} />
+	<label for="nome">Nome</label>
+	<input type="text" name="nome" placeholder="Digite seu nome: ">
+	<label for="descricao">Decrição</label>
+	<input type="text" name="descricao" placeholder="Descreva">
+	<label for="numero">Número</label>
+	<input type="number" name="numero" placeholder="Digite um número">
+	<select name="Corpo">
+     <option value="Magro">Magro</option>
+	 <option value="Normal">Normal</option>
+	 <option value="sobrepeso">Sobrepeso</option>
+	 <option value="obeso">Obeso</option>
+	</select>
+	<input type="checkbox" name="alergia">
+	<label for="alergia">Alergia</label>
+	<input type="checkbox" name="problema cardíaco">
+	<label for="problema cardíaco">Problema cardíaco</label>
+	 <input type="checkbox" name="problema respiratorio" >
+	 <label for="problema respiratorio">Problema respiratorio</label>
+	 <input type="date" name="data">
+</form>
