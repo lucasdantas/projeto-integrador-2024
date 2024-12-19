@@ -14,29 +14,36 @@
 	<input type="hidden" name="grupo" value=${grupo} />
 
 	<label for="nome">Nome: </label><br>
-	<input type="text" name="nome"><br>
+	<input type="text" name="nome"><br><br>
 
 	<label for="descricao">Se descreva: </label><br>
-	<input type="textarea" rows="5" cols="10" name="descricao"><br>
+	<textarea rows="5" cols="21" name="descricao">
+	</textarea><br><br>
 
 	<label for="numero">Idade: </label><br>
-	<input type="number" name="numero"><br>
+	<input type="number" name="numero"><br><br>
 
 	<label for="tipo">Selecione uma opção: </label><br>
 	<select name="tipo">
 		<option value="feminino">Feminino</option>
 		<option value="masculino">Masculino</option>
-		<option value="outro">Outres</option>
-	</select><br>
+		<option value="outro">Outro</option>
+	</select><br><br>
 
+	<p>Selecione uma opção:</p>
+	<input type="radio" name="opcoes">
+	<label for="opcoes">Negro</label><br>
+	<input type="radio" name="opcoes">
+	<label for="opcoes">Branco</label><br>
+	<input type="radio" name="opcoes">
+	<label for="opcoes">Pardo</label><br>
+	<input type="radio" name="opcoes">
+	<label for="opcoes">Amarelo</label><br>
+	<input type="radio" name="opcoes">
+	<label for="opcoes">Indigena</label><br><br>
 
+	<label for="data">Data de hoje:</label><br>
+	<input type="date" nome="data"><br><br>
 
-
-
-
-
-
-
-	<br>
 	<input type="submit" value="Cadastrar">
 </form>
