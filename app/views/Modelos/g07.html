@@ -2,7 +2,7 @@
 #{set title:'Formulário de Cadastro' /}
 
 <p class="lead mt-4">
-	Formulário do grupo ${grupo}
+	Formulário do grupo ${g7}
 </p>
 
 
@@ -10,8 +10,55 @@
 	<small>Descreva o seu pedido de um smartphone</small>
 </p>
 
+<style>
+	body {
+    background-color: #ADD8E6;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #00008B;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+input[type="checkbox"] {
+    vertical-align: middle;
+}
+label {
+    font-size: 16px;
+    color: #00008B;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+
+button {
+    background-color: #00008B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+button:hover {
+    background-color: #00005f;
+}
+
+</style>
+
 <form>
-	<h2 style="text-align: center; color: #00008B;">Cadastro de Animal</h2>
 	<input type="hidden" name="grupo" value=${grupo} />
 
 	<label for="nome">Nome do Animal:</label>
@@ -32,21 +79,20 @@
    
    <label>Problemas de Saúde:</label><br>
 	<input type="checkbox" id="alergia" name="opcoes" value="Alergia">
-	<label for="alergia">Alergia</label><br>
+	<label for="alergia">Alergia</label>
    
 	<input type="checkbox" id="problema_cardiaco" name="opcoes" value="Problema cardíaco">
-	<label for="problema_cardiaco">Problema Cardíaco</label><br>
+	<label for="problema_cardiaco">Problema Cardíaco</label>
    
 	<input type="checkbox" id="problema_respiratorio" name="opcoes" value="Problema respiratório">
-	<label for="problema_respiratorio">Problema Respiratório</label><br>
+	<label for="problema_respiratorio">Problema Respiratório</label>
    
 	<input type="checkbox" id="alopecia" name="opcoes" value="Alopecia">
-	<label for="alopecia">Alopecia</label><br><br>
+	<label for="alopecia">Alopecia</label>
    
 	<label for="data">Data de Registro:</label>
 	<input type="date" id="data" name="data" required><br><br>
-   
-	<button> </button>
+    <button type="submit">Cadastrar</button>
 
 	   
        
