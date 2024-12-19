@@ -14,27 +14,34 @@
 	<input type="hidden" name="grupo" value=${grupo} />
 
 	<label for="nome">Nome:</label>
-	<input type="text" name="nome" id="nome">
+	<input type="text" name="nome" id="nome" placeholder="seu nome"><br>
     
 	<label for="numero">Telefone:</label>
-    <input type="number" name="numero" id="numero" placeholder="apenas numero">
+    <input type="number" name="numero" id="numero" placeholder="apenas numero"><br>
+
+	<label for="descricao">Faça uma breve descrição sobre você:</label><br>
+    <textarea name="descricao" id="descricao" cols="10" rows="10"></textarea><br>
 
 	<label for="tipo">Sua cor:</label>
 	<select name="tipo" id="tipo">
 		<option value="branco">Branco</option>
 		<option value="pardo">Pardo</option>
 		<option value="preto">Preto</option>
-	</select>
-     <br>
+	</select><br><br>
+
 	<p>Selecione seu gênero:</p>
-	<input type="radio" id="Feminino" name="Feminino" value="Feminino">
-    <label for="feminino">Feminino</label><br>
-  
-    <input type="radio" id="Masculino" name="Masculino" value="Masculino">
-    <label for="masculino">Masculino</label><br>
-  
-    <input type="radio" id="Não Informar" name="Não Informar" value="Não Informar">
-    <label for="informar">Não Informar</label><br>
-    
+	<label for="feminino">Feminino</label>
+	<input type="radio" id="Feminino" name="genero" value="Feminino">
+    <br>
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="Masculino" name="genero" value="Masculino">
+    <br>
+    <label for="informar">Não Informar</label>
+    <input type="radio" id="Não Informar" name="genero" value="Não Informar">
+    <br><br>
+	<label for="data">Sua data de nascimento:</label>
+    <input type="date" name="data" id="data">
+	<br>
+	
 	<input type="submit" value="Cadastro">
 </form>
