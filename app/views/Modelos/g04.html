@@ -9,7 +9,9 @@
 <h2>Sorveteria ICE DRAGON</h2>
 
 <form action="http://10.97.3.8:9000/salvar">
-	<input type="hidden" name="grupo" value=${grupo} />
+
+	<input type="hidden" name="grupo" value=${G04} />
+
 	<p>
 		<label for="iNome">Nome:</label>
 		<input type="text" id="iNome" name="nome">
@@ -23,13 +25,24 @@
 	</p>
 
 	<p>
-		<label for="preco">Preço</label>
+		<label for="preco">Preço:</label>
 		<input type="number" id="preco" name="numero">
 
 	</p>
 
-	<label for="sabor">Sabores</label>
+	<!-- <label for="sabor">Sabores:</label>
 	<select name="Tipos de Sorvete" id="sabor" name="tipo">
+
+		<option value=""></option>
+		<option value="1">Morango</option>
+		<option value="2">Chocolate</option>
+		<option value="3">Baunilha</option>
+		<option value="4">Menta</option>
+	</select> -->
+
+	<label for="tipo">Sabores:</label>
+
+	<select name="tipo" id="tipo">
 		<option value=""></option>
 		<option value="1">Morango</option>
 		<option value="2">Chocolate</option>
