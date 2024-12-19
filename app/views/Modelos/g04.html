@@ -2,7 +2,7 @@
 #{set title:'Formulário de Cadastro' /}
 
 <p class="lead mt-4">
-	Formulário do grupo ${grupo}
+	Formulário do grupo G4
 </p>
 
 
@@ -10,56 +10,60 @@
 
 <form action="http:10.97.3.8:9000/salvar">
 	<input type="hidden" name="grupo" value=${grupo} />
-<p>
-	<label for="iNome" >Nome:</label>
-	<input type="text" id="iNome" name="nome">
+	<p>
+		<label for="iNome">Nome:</label>
+		<input type="text" id="iNome" name="nome">
 
-</p>
+	</p>
 
-<p>
-	<label for="localizacao">localização:</label>
-	<textarea name="descricao" id="localizacao" cols="30" rows="5"></textarea>
+	<p>
+		<label for="localizacao">localização:</label>
+		<textarea name="descricao" id="localizacao" cols="30" rows="5"></textarea>
 
-</p>
+	</p>
 
-<p>
-	<label for="preco">Preço</label>
-	<input type="number" id="preco" name="numero">
+	<p>
+		<label for="preco">Preço</label>
+		<input type="number" id="preco" name="numero">
 
-</p>
+	</p>
 
-<label for="sabor">Sabores</label>
-<select name="Tipos de Sorvete" id="sabor" name="tipo">
-	<option value=""></option>
-	<option value="1">Morango</option>
-	<option value="2">Chocolate</option>
-	<option value="3">Baunilha</option>
-	<option value="4">Menta</option>
-</select>
+	<label for="sabor">Sabores</label>
+	<select name="Tipos de Sorvete" id="sabor" name="tipo">
+		<option value=""></option>
+		<option value="1">Morango</option>
+		<option value="2">Chocolate</option>
+		<option value="3">Baunilha</option>
+		<option value="4">Menta</option>
+	</select>
 
-<p>
-	<label for="granola">Granola</label>
-	<input type="checkbox" id="granola" name="opcoes">
+	<p>
+		<label for="granola">Granola</label>
+		<input type="checkbox" id="granola" name="opcoes">
 
-	<label for="M&M">M&M</label>
-	<input type="checkbox" id="M&M" name="opcoes">
+		<label for="M&M">M&M</label>
+		<input type="checkbox" id="M&M" name="opcoes">
 
-	<label for="pacoca">Paçoca</label>
-	<input type="checkbox" id="Paçoca" name="opcoes">
-	
-	<label for="cobM" >Cobertura de Morango</label>
-	<input type="checkbox" name="opcoes" id="cobM">
-	
-</p>
+		<label for="pacoca">Paçoca</label>
+		<input type="checkbox" id="Paçoca" name="opcoes">
 
-<label for="iData">Data:</label>
+		<label for="cobM">Cobertura de Morango</label>
+		<input type="checkbox" name="opcoes" id="cobM">
+
+	</p>
+
+	<p><label for="iData">Data:</label>
+
+		<input type="date" name="date" id="iData">
+
+	</p>
 
 
-<input type="date" name="date" id="iData" >
 
 
-<input type="submit" value="enviar">
-	
-	
+	<p><input type="submit" value="enviar"></p>
+
+
+
 
 </form>
