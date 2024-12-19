@@ -6,18 +6,18 @@
 </p>
 
 
-<!-- <h2>Sorveteria ICE DRAGON</h2> -->
+<h2>Sorveteria ICE DRAGON</h2>
 
 <form>
 	<input type="hidden" name="grupo" value=${grupo} />
 <p>
-	<label for="iNome" >Sorveteria</label>
+	<label for="iNome" >Nome:</label>
 	<input type="text" id="iNome" name="nome">
 
 </p>
 
 <p>
-	<label for="localizacao">localização</label>
+	<label for="localizacao">localização:</label>
 	<textarea name="descricao" id="localizacao" cols="30" rows="5"></textarea>
 
 </p>
@@ -38,10 +38,26 @@
 </select>
 
 <p>
-	<input type="checkbox" id="complemento" name="opcoes">
+	<label for="granola">Granola</label>
+	<input type="checkbox" id="granola" name="opcoes">
+
+	<label for="M&M">M&M</label>
+	<input type="checkbox" id="M&M" name="opcoes">
+
+	<label for="pacoca">Paçoca</label>
+	<input type="checkbox" id="Paçoca" name="opcoes">
+	
+	<label for="cobM" >Cobertura de Morango</label>
+	<input type="checkbox" name="opcoes" id="cobM">
 	
 </p>
 
+<label for="iData">Data:</label>
+
+<input type="date" name="date" id="iData" >
+
+
+<input type="submit" value="enviar">
 	
 	
 

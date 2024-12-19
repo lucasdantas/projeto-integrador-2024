@@ -15,24 +15,83 @@
 <div id="principal" style=" width: 50%;">
 	<input type="hidden" name="grupo" value=${grupo} />
 
+
+
 	<div class="form-row">
 		<div class="form-group col-md-12">
-		  <label for="input1">Nome</label>
+		  <label for="input1">Nome:</label>
 		  <input type="text" class="form-control" id="input1" name="nome" placeholder="Digite seu nome:">
 		</div>
 
 	  </div>
 
-	  <div class="form-group">
-		<label for="input3">Id do funcionario</label>
-		<input type="number" class="form-control" id="input3" name="numero" placeholder="Digite seu ID:">
+	  <div class="form-row">
+		<div class="form-group col-md-12">
+		  <label for="input5">CPF</label>
+		  <input type="text" class="form-control" id="input5" name="data" placeholder="Digite seu CPF: ">
+		</div>
+	  </div>
+      
+      <div class="form-row">
+		<div class="form-group col-md-12">
+		  <label for="input5">Telefone</label>
+		  <input type="text" class="form-control" id="input5" name="data" placeholder="Digite seu Telefone: ">
+		</div>
 	  </div>
 
+	  </div>
 
+	  <div class="form-group">
+		<label for="input3">Id do funcionario</label>
+		<input type="number" class="form-control" id="input3" name="numero" placeholder="Digite seu ID: ">
+	  </div>
 
+	  <div class="form-row">
+		<div class="form-group col-md-12">
+		  <label for="input4">Funcionalidade</label>
+		  <select id="input4" class="form-control" name="tipo">
+			<option value="nulo"  >Selecione</option>
+			<option value="INFLUENCER DIGITAL" >Influencer Digital</option>
+			<option value="TRANSPORTADOR" >Transportador</option>
+			<option value="GERENTE" >Gerente</option>
+            <option value="PROFISSIONAL DE RH" >Profissional de RH</option>
+		  </select>
+		</div>
 
+	  </div>
+	<div class="form-row">
+    <div class="col-md-12">
+        <label>Área de Atuação</label>
+    </div>
+</div>
+<div class="form-row">
+    <div class="form-group col">
+        <input type="radio" name="opcoes" value="operacional" id="operacional">
+        <label for="operacional">Operacional</label>
+    </div>
+    <div class="form-group col">
+        <input type="radio" name="opcoes" value="financeira" id="financeira">
+        <label for="financeira">Financeira</label>
+    </div>
+    <div class="form-group col">
+        <input type="radio" name="opcoes" value="marketing" id="marketing">
+        <label for="marketing">Marketing</label>
+    </div>
+</div>
+<div class="form-row">
+    <div class="form-group col">
+        <input type="radio" name="opcoes" value="recursos Humanos" id="recursosHumanos">
+        <label for="recursosHumanos">Recursos Humanos</label>
+    </div>
+</div>
+		
+	
+	  </div>
+	  
 
-
-
+	  <button type="submit" class="btn btn-primary">Enviar</button>
+	  <button type="reset" class="btn btn-primary">Limpar</button>
+	
+</div>
 
 </form>
