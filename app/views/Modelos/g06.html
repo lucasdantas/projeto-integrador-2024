@@ -4,15 +4,17 @@
 <p class="lead mt-4">
 	Formulário do grupo ${grupo}
 </p>
-<input type="hidden" name="grupo" value=${grupo} />
 
 <p>
 	<small>Desenvolva aqui o seu formulário de cadastro.</small>
-
-
+	
+	
 </p>
 
 <form action="http://10.97.3.8:9000/salvar"> 
+
+	<input type="hidden" name="grupo" value=${grupo} />
+	
 	<!--Nome-->
     <label for="nome">Nome:</label>
     <input type="text" id="nome" name="nome" required>
