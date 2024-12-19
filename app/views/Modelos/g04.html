@@ -10,7 +10,10 @@
 
 <form action="http://10.97.3.8:9000/salvar">
 
-	<input type="hidden" name="grupo" value=${G04} />
+	<label for="grupo" >Grupo:</label>
+	<input type="text" name="grupo" id="grupo" value="g04">
+
+	<input type="hidden" name="grupo" value=${grupo} />
 
 	<p>
 		<label for="iNome">Nome:</label>
@@ -44,10 +47,10 @@
 
 	<select name="tipo" id="tipo">
 		<option value=""></option>
-		<option value="1">Morango</option>
-		<option value="2">Chocolate</option>
-		<option value="3">Baunilha</option>
-		<option value="4">Menta</option>
+		<option value="Morango">Morango</option>
+		<option value="Chocolate">Chocolate</option>
+		<option value="Baunilha">Baunilha</option>
+		<option value="Menta">Menta</option>
 	</select>
 
 	<p>
