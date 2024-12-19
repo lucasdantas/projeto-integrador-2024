@@ -11,15 +11,41 @@
 </p>
 
 <form>
-	<input type="hidden" name="grupo" value=${grupo} />
-	<label for="nome">grupo:</label>
-	<input type="text" id="Grupo06" value="grupo06"/>
-	<input type="submit" value="enviar"><br>
+	<!--Nome-->
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    <br><br>
 
-	<label for="nome">nome:</label>
-	<input type="text" id="nome" value="hellou">
-	<input type="submit" value="enviar">
-	
+    <!--Descrição-->
+    <label for="descricao">Descricao:</label>
+    <input type="text" id="descricao" name="descricao" required>
+    <br><br>
+
+    <!--Número-->
+    <label for="idade">Número:</label>
+    <input type="number" id="numero" name="numero"required>
+    <br><br>
+
+    <!--Tipo-->
+    <label for="tipo">Tipo:</label>
+    <select id="tipo" name="tipo" required>
+
+          <option value="Alto"> Magro</option>
+          <option value="Baixo">Normal</option>
+          <option value="Media">Obeso</option>
+         
+
+    </select>
+    <br><br>
+
+
+      <!--data-->
+      <label for="data de nascimento">Data:</label>
+      <input type="date" id="data" name="data" value="data" required>
+      <br><br>
+
+      <!--Botão-->
+      <button type="submit">Enviar</button>
 
 	
 	
