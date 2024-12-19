@@ -1,3 +1,6 @@
+#{extends 'main.html' /}
+#{set title:'Formulário de Cadastro' /}
+
 <p class="lead mt-4">
 	Formulário do grupo g09
 </p>
@@ -16,18 +19,14 @@
 	<label for="numero">Número</label>
 	<input type="number" name="numero" placeholder="Digite um número">
 
-	<select name="Corpo">
-		<option type="checkbox" value="Magro">Magro</option>
-		<option type="checkbox" value="sobrepeso">Sobrepeso</option>
-		<option type="checkbox" value="obeso">Obeso</option>
-	</select>
+	<input type="checkbox" name="opcoes" value="masc">
+	<label for="masc">Masculino</label>
+     <input type="checkbox" name="opcoes" value="fem">
+	 <label for="fem">Feminino</label>
+	 <input type="checkbox" name="opcoes" value="none">
+     <label for="none">Nenhum</label>
 
-	<input type="checkbox" name="alergia">
-	<label for="alergia">Alergia</label>
-	<input type="checkbox" name="problema cardíaco">
-	<label for="problema cardíaco">Problema cardíaco</label>
-	<input type="checkbox" name="problema respiratorio">
-	<label for="problema respiratorio">Problema respiratorio</label>
+	
 	<label for="date">Insira uma data</label>
 	<input type="text" name="data">
 	<input type="submit" value="enviar">
