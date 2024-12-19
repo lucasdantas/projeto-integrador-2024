@@ -11,7 +11,7 @@
 </p>
 
 <form action = "http://10.97.3.8:9000/salvar">
-	<input type="hidden" name="grupo" value=${grupo} />
+	<input type="hidden" name="grupo" value= g02 />
 
 
 	Insira seu nome : <input type="text" name="nome" /> </br></br>
@@ -19,4 +19,27 @@
 	Descrição: <input type="text" name="descricao"/></br></br>
 
 	numero de telefone <input type="number" name="numero"/></br></br>
+
+   <label for="Faça uma descrição sobre você"></label> </br></br>
+
+   <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea> </br></br>
+
+
+   <p>Escolha seu cantor favorito</p>
+
+   <input type="radio" id="tipo" name="opcao"> TS
+   <input type="radio" id="tipo" name="opcao"> Bruno Mars
+   <input type="radio" id="tipo" name="opcao"> Lady Gaga
+     </br></br>
+
+   <label for="tipo"> Selecione seu Curso</label>
+   <select name="tipo" id="tipo">
+     <option value="info">Info</option>
+     <option value="ADM">ADM</option>
+     <option value="Eletro">Eletro</option>
+   </select>
+    </br></br>
+
+   <input type="submit" value="cadastro">
+
 </form>
