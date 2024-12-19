@@ -14,19 +14,27 @@
 	<input type="hidden" name="grupo" value=${grupo} />
 
 	<label for="nome">Nome de Usuário</label>
-	<input type="text" id="nome" name="nome" />
+	<input type="text" id="nome" name="nome" /><br/>
 
-	<textarea name="descricao" rows="5" cols="15">Características</textarea>
+	<label for="descricao">Características: </label><br />
+	<textarea name="descricao" rows="5" cols="15"></textarea><br/>
 
 	<label for="numero">Idade</label>
-	<input type="number" id="numero" name="numero" /><br/>
+	<input type="number" id="numero" name="numero" /><br/><br/>
 
 	<label for="tipo">Nacionalidade</label>
 	<select name="tipo" id="tipo">
 		<option value="americano">Americano(a)</option>
 		<option value="brasileiro">Brasileiro(a)</option>
 		<option value="colombiano">Colombiano(a)</option>
-	</select>
+	</select><br><br>
+
+	<input type="checkbox" id="profissao1" name="opcoes" value="Professor">
+        <label for="profissao1">Sou Professor(a)</label><br>
+        <input type="checkbox" id="profissao2" name="opcoes" value="Medico">
+        <label for="profissao2">Sou Médico(a)</label><br>
+        <input type="checkbox" id="profissao3" name="opcoes" value="Programador">
+        <label for="profissao3">Sou Programador(a)</label><br><br>
 
 	<input type="submit" value="Cadastrar"/>
 
