@@ -5,96 +5,98 @@
 	Formulário do grupo 08
 </p>
 
-
 <p>
 	<small>Desenvolva aqui o seu formulário de cadastro.</small>
 </p>
 
 <form action="http://10.97.3.8:9000/salvar" style="display: flex; justify-content: center; align-items: center;">
 
-<div id="principal" style=" width: 50%;">
-	<input type="hidden" name="grupo" value=${grupo} />
+	<div id="principal" style="width: 50%;">
 
+		<input type="hidden" name="grupo" value="${grupo}" />
 
-
-	<div class="form-row">
-		<div class="form-group col-md-12">
-		  <label for="input1">Nome:</label>
-		  <input type="text" class="form-control" id="input1" name="nome" placeholder="Digite seu nome:">
+		<div class="form-row">
+			<div class="form-group col-md-12">
+				<label for="input1">Nome:</label>
+				<input type="text" class="form-control" id="input1" name="nome" placeholder="Digite seu nome:" required>
+			</div>
 		</div>
 
-	  </div>
-
-	  <div class="form-row">
-		<div class="form-group col-md-12">
-		  <label for="input2">CPF:</label>
-		  <input type="text" class="form-control" id="input2" name="cpf" placeholder="Digite seu CPF:">
+		<div class="form-row">
+			<div class="form-group col-md-12">
+				<label for="input2">Data de Nascimento:</label>
+				<input type="date" class="form-control" id="input2" name="data" placeholder="Digite a data:" required>
+			</div>
 		</div>
+
+		<div class="form-row">
+			<div class="form-group col-md-12">
+				<label for="input3">Telefone:</label>
+				<input type="tel" class="form-control" id="input3" name="telefone" placeholder="Digite seu telefone:" required>
+			</div>
+		</div>
+
+		<div class="form-row">
+			<div class="form-group col-md-12">
+				<label for="input4">Id do Funcionário:</label>
+				<input type="number" class="form-control" id="input4" name="id_funcionario" placeholder="Digite seu ID:" required>
+			</div>
+		</div>
+
+		<div class="form-row">
+			<div class="form-group col-md-12">
+				<label for="input5">Funcionalidade:</label>
+				<select id="input5" class="form-control" name="funcionalidade" required>
+					<option value="nulo">Selecione</option>
+					<option value="INFLUENCER DIGITAL">Influencer Digital</option>
+					<option value="TRANSPORTADOR">Transportador</option>
+					<option value="GERENTE">Gerente</option>
+					<option value="PROFISSIONAL DE RH">Profissional de RH</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-row">
+			<div class="form-group col-md-12">
+				<label>Área de Atuação:</label>
+			</div>
+		</div>
+
+		<div class="form-row">
+			<div class="form-group col-md-12">
+				<input type="radio" name="area_atuacao" value="operacional" id="operacional" required>
+				<label for="operacional">Operacional</label>
+			</div>
+		</div>
+
+		<div class="form-row">
+			<div class="form-group col-md-12">
+				<input type="radio" name="area_atuacao" value="financeira" id="financeira" required>
+				<label for="financeira">Financeira</label>
+			</div>
+		</div>
+
+		<div class="form-row">
+			<div class="form-group col-md-12">
+				<input type="radio" name="area_atuacao" value="marketing" id="marketing" required>
+				<label for="marketing">Marketing</label>
+			</div>
+		</div>
+
+		<div class="form-row">
+			<div class="form-group col-md-12">
+				<input type="radio" name="area_atuacao" value="recursosHumanos" id="recursosHumanos" required>
+				<label for="recursosHumanos">Recursos Humanos</label>
+			</div>
+		</div>
+
+		<div class="form-row">
+			<div class="form-group col-md-12">
+				<button type="submit" class="btn btn-primary">Enviar</button>
+				<button type="reset" class="btn btn-secondary">Limpar</button>
+			</div>
+		</div>
+
 	</div>
-
-	<div class="form-row">
-		<div class="form-group col-md-12">
-		  <label for="input3">Telefone:</label>
-		  <input type="text" class="form-control" id="input3" name="telefone" placeholder="Digite seu telefone:">
-		</div>
-	</div>
-
-	<div class="form-row">
-		<div class="form-group col-md-12">
-		  <label for="input4">Id do Funcionario:</label>
-		  <input type="number" class="form-control" id="input4" name="id_funcionario" placeholder="Digite seu ID:">
-		</div>
-	</div>
-
-	<div class="form-row">
-		<div class="form-group col-md-12">
-		  <label for="input5">Funcionalidade:</label>
-		  <select id="input5" class="form-control" name="funcionalidade">
-			<option value="nulo">Selecione</option>
-			<option value="INFLUENCER DIGITAL">Influencer Digital</option>
-			<option value="TRANSPORTADOR">Transportador</option>
-			<option value="GERENTE">Gerente</option>
-			<option value="PROFISSIONAL DE RH">Profissional de RH</option>
-		  </select>
-		</div>
-	</div>
-
-	<div class="form-row">
-		<div class="form-group col-md-12">
-			<label>Área de Atuação:</label>
-		</div>
-	</div>
-
-	<div class="form-row">
-		<div class="form-group col-md-12">
-			<input type="radio" name="area_atuacao" value="operacional" id="operacional">
-			<label for="operacional">Operacional</label>
-		</div>
-	</div>
-
-	<div class="form-row">
-		<div class="form-group col-md-12">
-			<input type="radio" name="area_atuacao" value="financeira" id="financeira">
-			<label for="financeira">Financeira</label>
-		</div>
-	</div>
-
-	<div class="form-row">
-		<div class="form-group col-md-12">
-			<input type="radio" name="area_atuacao" value="marketing" id="marketing">
-			<label for="marketing">Marketing</label>
-		</div>
-	</div>
-
-	<div class="form-row">
-		<div class="form-group col-md-12">
-			<input type="radio" name="area_atuacao" value="recursosHumanos" id="recursosHumanos">
-			<label for="recursosHumanos">Recursos Humanos</label>
-		</div>
-	</div>
-
-	<button type="submit" class="btn btn-primary">Enviar</button>
-	<button type="reset" class="btn btn-secondary">Limpar</button>
-</div>
 
 </form>
