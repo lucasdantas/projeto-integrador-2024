@@ -12,13 +12,22 @@
 
 <form action="http://10.97.3.8:9000/salvar">
 	<input type="hidden" name="grupo" value=${grupo} />
-    
-	<label for="nome">Nome de Usuário</label>
-	<input type="text" id="nome" name="nome"/>
 
-	<textarea name="descricao" rows="2" cols="2">Características</textarea>
+	<label for="nome">Nome de Usuário</label>
+	<input type="text" id="nome" name="nome" />
+
+	<textarea name="descricao" rows="5" cols="15">Características</textarea>
 
 	<label for="numero">Idade</label>
-	<input type="number" id="numero" name="numero"/>
+	<input type="number" id="numero" name="numero" /><br/>
+
+	<label for="tipo">Nacionalidade</label>
+	<select name="tipo" id="tipo">
+		<option value="americano">Americano(a)</option>
+		<option value="brasileiro">Brasileiro(a)</option>
+		<option value="colombiano">Colombiano(a)</option>
+	</select>
+
+	<input type="submit" value="Cadastrar"/>
 
 </form>
